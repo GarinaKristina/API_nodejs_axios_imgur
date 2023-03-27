@@ -9,7 +9,7 @@ class UrlData {
     return '3/image';
   }
   get deleteImageHash() {
-    return '3/image/X4jdM1X';
+    return '3/image/QLMArWV';
   }
 }
 
