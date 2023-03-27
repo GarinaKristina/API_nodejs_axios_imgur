@@ -4,6 +4,9 @@
   "description": "My API application",
   "main": "app.js",
   "type": "module",
+  "mocha": {
+    "timeout": "10000"
+  },
   "scripts": {
     "start": "nodemon app.js",
     "test": "mocha"
@@ -25,4 +28,3 @@
     "nodemon": "^2.0.22"
   }
 }
-

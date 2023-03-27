@@ -27,11 +27,11 @@ class CrudConfigs {
       data: data,
     };
   }
-  get postConfig() {
+  get deleteConfig() {
     return {
-      method: 'post',
+      method: 'delete',
       maxBodyLength: Infinity,
-      url: `${UrlData.baseUrl}${UrlData.uploadImageUrl}`,
+      url: `${UrlData.baseUrl}${UrlData.deleteImageHash}`,
       headers: {
         Authorization: token,
         ...data.getHeaders(),
