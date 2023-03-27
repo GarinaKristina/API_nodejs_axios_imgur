@@ -2,23 +2,20 @@ import UrlData from './UrlData.js';
 import { token } from './token.js';
 import FormData from 'form-data';
 let data = new FormData();
-data.append('title', 'My dank meme album');
-data.append('description', 'This album contains a lot of dank memes. Be prepared.');
 
-class PutConfig {
-  get putConfig() {
+class Delete {
+  get config() {
     return {
-      method: 'put',
+      method: 'delete',
       maxBodyLength: Infinity,
-      url: `${UrlData.baseUrl}${UrlData.updateImage}`,
+      url: `${UrlData.baseUrl}${UrlData.deleteImageHash}`,
       headers: {
         Authorization: token,
         ...data.getHeaders(),
       },
-
       data: data,
     };
   }
 }
 
-export default new PutConfig();
+export default new Delete();

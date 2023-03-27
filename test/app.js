@@ -1,17 +1,17 @@
 import axios from 'axios';
-import Configs from '../config/Configs.js';
+import ConfigsFactory from '../config/ConfigsFactory.js';
 import { expect } from 'chai';
 
 describe('API testing', async () => {
   it('In GET request, status code is equal 200', async () => {
-    await axios(Configs.GetConfig.getConfig).then((response) => {
+    await axios(ConfigsFactory.Get.config).then((response) => {
       let statusResult = response.data.status;
       expect(statusResult).to.equal(200);
     });
   });
 }),
   it('In POST request, status code is equal "200" and type of image includes "gif"', async () => {
-    await axios(Configs.PostConfig.postConfig).then((response) => {
+    await axios(ConfigsFactory.Post.config).then((response) => {
       let statusResult = response.data.status;
       let imageType = response.data.data.type;
       expect(statusResult).to.equal(200);
@@ -19,13 +19,13 @@ describe('API testing', async () => {
     });
   }),
   it('In DELETE request, status code is equal "true""', async () => {
-    await axios(Configs.DeleteConfig.deleteConfig).then((response) => {
+    await axios(ConfigsFactory.Delete.config).then((response) => {
       let deletedStatus = response.data.success;
       expect(deletedStatus).to.equal(true);
     });
   });
 it('In PUT request, status code is equal "200"', async () => {
-  await axios(Configs.PutConfig.putConfig).then((response) => {
+  await axios(ConfigsFactory.Put.config).then((response) => {
     let statusResult = response.data.status;
     expect(statusResult).to.equal(200);
   });

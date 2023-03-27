@@ -1,8 +1,8 @@
 import UrlData from './UrlData.js';
 import { token } from './token.js';
 
-class GetConfig {
-  get getConfig() {
+class Get {
+  get config() {
     return {
       method: 'get',
       maxBodyLength: Infinity,
@@ -14,4 +14,4 @@ class GetConfig {
   }
 }
 
-export default new GetConfig();
+export default new Get();

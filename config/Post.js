@@ -4,8 +4,8 @@ import FormData from 'form-data';
 let data = new FormData();
 data.append('image', 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
 
-class PostConfig {
-  get postConfig() {
+class Post {
+  get config() {
     return {
       method: 'post',
       maxBodyLength: Infinity,
@@ -20,4 +20,4 @@ class PostConfig {
   }
 }
 
-export default new PostConfig();
+export default new Post();
