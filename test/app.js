@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ConfigsFactory from '../config/ConfigsFactory.js';
+import ConfigsFactory from '../src/config/ConfigsFactory.js';
 import { expect } from 'chai';
 
 describe('API testing', async () => {

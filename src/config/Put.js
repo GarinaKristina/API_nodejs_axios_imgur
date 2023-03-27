@@ -1,5 +1,5 @@
-import UrlData from './UrlData.js';
-import { token } from './token.js';
+import UrlData from '../data/UrlData.js';
+import { token } from '../data/token.js';
 import FormData from 'form-data';
 let data = new FormData();
 data.append('title', 'My dank meme album');

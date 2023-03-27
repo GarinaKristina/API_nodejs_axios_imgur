@@ -1,5 +1,5 @@
-import UrlData from './UrlData.js';
-import { token } from './token.js';
+import UrlData from '../data/UrlData.js';
+import { token } from '../data/token.js';
 
 class Get {
   get config() {
