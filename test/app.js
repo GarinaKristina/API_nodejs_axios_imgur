@@ -19,7 +19,7 @@ describe('API testing', async () => {
     });
   }),
   it('In DELETE request, status code is equal "true""', async () => {
-    await axios(Configs.PostConfig.postConfig).then((response) => {
+    await axios(Configs.DeleteConfig.deleteConfig).then((response) => {
       let deletedStatus = response.data.success;
       expect(deletedStatus).to.equal(true);
     });
