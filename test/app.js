@@ -24,3 +24,9 @@ describe('API testing', async () => {
       expect(deletedStatus).to.equal(true);
     });
   });
+it('In PUT request, status code is equal "200"', async () => {
+  await axios(Configs.PutConfig.putConfig).then((response) => {
+    let statusResult = response.data.status;
+    expect(statusResult).to.equal(200);
+  });
+});

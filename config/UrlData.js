@@ -11,6 +11,9 @@ class UrlData {
   get deleteImageHash() {
     return '3/image/QLMArWV';
   }
+  get updateImage() {
+    return '3/image/hOVQWzM';
+  }
 }
 
 export default new UrlData();
