@@ -2,13 +2,13 @@
   "name": "api_nodejs_axios_imgur",
   "version": "1.0.0",
   "description": "My API application",
-  "main": "app.js",
+  "main": "./test/app.js",
   "type": "module",
   "mocha": {
     "timeout": "10000"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon ./test/app.js",
     "test": "mocha"
   },
   "repository": {

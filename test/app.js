@@ -18,19 +18,11 @@ describe('API testing', async () => {
       expect(imageType).to.include('gif');
     });
   }),
-  it('In DELETE request, status code is equal 200', async () => {
+  it('In DELETE request, status code is equal "true""', async () => {
     await axios(CrudConfigs.deleteConfig).then((response) => {
       console.log(response.data);
-      done();
-      // let deletedStatus = response.data.success;
-      // expect(deletedStatus).to.equal(true);
+
+      let deletedStatus = response.data.success;
+      expect(deletedStatus).to.equal(true);
     });
   });
-
-// axios(CrudConfigs.postConfig)
-//   .then((response) => {
-//     console.log('--- POST DATA       :', JSON.stringify(response.data));
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
