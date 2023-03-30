@@ -1,4 +1,4 @@
-import UrlData from '../data/UrlData.js';
+// import UrlData from '../data/UrlData.js';
 import { token } from '../data/token.js';
 import FormData from 'form-data';
 let data = new FormData();
@@ -9,7 +9,7 @@ class Post {
     return {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `${UrlData.baseUrl}${UrlData.uploadImageUrl}`,
+      // url: `${UrlData.baseUrl}${UrlData.uploadImageUrl}`,
       headers: {
         Authorization: token,
         ...data.getHeaders(),

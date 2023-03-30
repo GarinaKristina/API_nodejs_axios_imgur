@@ -1,16 +1,16 @@
 class UrlData {
   get baseUrl() {
-    return 'https://api.imgur.com/';
+    return 'https://api.imgur.com';
   }
-  get imageUrl() {
-    return '3/image/rHPxPFU';
-  }
-  get uploadImageUrl() {
-    return '3/image';
-  }
-  get deleteImageHash() {
-    return '3/image/QLMArWV';
-  }
+  // get imageUrl() {
+  //   return '3/image/rHPxPFU';
+  // }
+  // get uploadImageUrl() {
+  //   return '3/image';
+  // }
+  // get deleteImageHash() {
+  //   return '3/image/QLMArWV';
+  // }
   get updateImage() {
     return '3/image/hOVQWzM';
   }
