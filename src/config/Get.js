@@ -1,4 +1,3 @@
-import UrlData from '../data/UrlData.js';
 import { token } from '../data/token.js';
 
 class Get {
@@ -6,7 +5,6 @@ class Get {
     return {
       method: 'get',
       maxBodyLength: Infinity,
-      url: `${UrlData.baseUrl}${UrlData.imageUrl}`,
       headers: {
         Authorization: token,
       },

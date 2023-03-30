@@ -1,4 +1,3 @@
-import UrlData from '../data/UrlData.js';
 import { token } from '../data/token.js';
 import FormData from 'form-data';
 let data = new FormData();
@@ -10,7 +9,6 @@ class Put {
     return {
       method: 'put',
       maxBodyLength: Infinity,
-      url: `${UrlData.baseUrl}${UrlData.updateImage}`,
       headers: {
         Authorization: token,
         ...data.getHeaders(),
