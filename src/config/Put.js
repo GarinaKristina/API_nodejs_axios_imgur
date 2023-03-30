@@ -1,8 +1,6 @@
 import { token } from '../data/token.js';
 import FormData from 'form-data';
 let data = new FormData();
-data.append('title', 'My dank meme album');
-data.append('description', 'This album contains a lot of dank memes. Be prepared.');
 
 class Put {
   get config() {
@@ -13,8 +11,10 @@ class Put {
         Authorization: token,
         ...data.getHeaders(),
       },
-
-      data: data,
+      data: {
+        title: 'My dank meme album',
+        description: 'This album contains a lot of dank memes. Be prepared.',
+      },
     };
   }
 }
